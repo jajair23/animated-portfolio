@@ -15,7 +15,7 @@ export default function Header() {
         <Link
           key={link.name}
           to={link.path}
-          className={\`hover:underline \${pathname === link.path ? 'underline text-blue-400' : ''}\`}
+          className={`hover:underline ${pathname === link.path ? 'underline text-blue-400' : ''}`}
         >
           {link.name}
         </Link>
