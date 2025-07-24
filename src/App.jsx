@@ -8,8 +8,13 @@ import Contact from './sections/Contact'
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem('theme') === 'dark'
+    const savedTheme = localStorage.getItem('theme')
+    if (savedTheme === 'dark') return true
+    if (savedTheme === 'light') return false
+    // Default to dark if nothing is saved
+    return true
   })
+
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', darkMode)
