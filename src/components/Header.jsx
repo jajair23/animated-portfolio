@@ -1,27 +1,27 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll'
 
-export default function Header() {
-  const { pathname } = useLocation()
-  const navLinks = [
-    { name: 'Jair Orduña', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Projects', path: '/projects' },
-    { name: 'Contact', path: '/contact' },
-  ]
+export default function Header({ toggleTheme, darkMode }) {
+  const navLinks = ['home', 'about', 'projects', 'testimonials', 'contact']
 
   return (
-    <nav className="p-4 flex justify-center space-x-6 bg-black text-white fixed top-0 w-full z-50 border-b border-gray-800">
-      {navLinks.map((link) => (
-        <Link
-          key={link.name}
-          to={link.path}
-          className={`hover:underline text-sm sm:text-base ${
-            pathname === link.path ? 'underline text-blue-400' : ''
-          }`}
-        >
-          {link.name}
-        </Link>
-      ))}
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-black/80 backdrop-blur border-b border-gray-300 dark:border-gray-700 flex justify-between items-center px-6 py-4">
+      <div className="font-bold text-lg">Jair Orduña</div>
+      <div className="flex items-center space-x-4">
+        {navLinks.map(link => (
+          <ScrollLink
+            key={link}
+            to={link}
+            smooth={true}
+            duration={500}
+            className="capitalize cursor-pointer hover:underline text-sm sm:text-base"
+          >
+            {link}
+          </ScrollLink>
+        ))}
+        <button onClick={toggleTheme} className="text-sm border px-2 py-1 rounded">
+          {darkMode ? '☀️ Light' : '🌙 Dark'}
+        </button>
+      </div>
     </nav>
   )
 }
