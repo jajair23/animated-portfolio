@@ -8,18 +8,15 @@ export default function About() {
         in modern React and Vite environments.
       </p>
 
-      <a
+
+      <motion.a
         href="/resume_jair_orduna.pdf"
         download
-        className="inline-block px-6 py-3 border border-black dark:border-white rounded-full font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
-      >
-        <motion.button
           whileHover={{ scale: 1.05 }}
           className="mt-8 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full shadow-lg"
         >
           Download Resume
-        </motion.button>
-      </a>
+      </motion.a>
     </section>
   )
 }
