@@ -24,7 +24,7 @@ export default function App() {
   return (
     <div className="bg-white text-black dark:bg-black dark:text-white scroll-smooth">
       <Header toggleTheme={() => setDarkMode(!darkMode)} darkMode={darkMode} />
-      <main>
+      <main className="scroll-pt-16">
         <Home />
         <About />
         <Projects />

@@ -1,17 +1,45 @@
+import github from '../assets/github.png'
+import linkedin from '../assets/linkedin.png'
+import email from '../assets/email.png'
+
 export default function Contact() {
+  const socialLinks = [
+    {
+      href: 'https://github.com/jajair23',
+      src: github,
+      alt: 'GitHub',
+    },
+    {
+      href: 'https://www.linkedin.com/in/jairorduna/',
+      src: linkedin,
+      alt: 'LinkedIn',
+    },
+    {
+      href: 'mailto:jairorduna.tech@gmail.com',
+      src: email,
+      alt: 'Email',
+    },
+  ]
+
   return (
-    <section
-      id="contact"
-      className="px-6 md:px-12 py-24 bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200"
-    >
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Contact Me</h2>
-        <ul className="space-y-2">
-          <li><strong>Email:</strong> jajair23@gmail.com</li>
-          <li><strong>Phone:</strong> +63 939 461 3244</li>
-          <li><strong>GitHub:</strong> <a href="https://github.com/jajair23" target="_blank" className="underline text-blue-600 dark:text-blue-400">github.com/jajair23</a></li>
-          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jair-orduña" target="_blank" className="underline text-blue-600 dark:text-blue-400">linkedin.com/in/jair-orduña</a></li>
-        </ul>
+    <section id="contact" className="py-16 text-center">
+      <h2 className="text-4xl font-bold mb-6">Contact</h2>
+      <p className="mb-6">Let’s connect through any of the platforms below:</p>
+      <div className="flex justify-center gap-6">
+        {socialLinks.map((link, index) => (
+          <a
+            key={index}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={link.src}
+              alt={link.alt}
+              className="w-10 h-10 hover:scale-110 transition-transform duration-200 dark:invert"
+            />
+          </a>
+        ))}
       </div>
     </section>
   )
