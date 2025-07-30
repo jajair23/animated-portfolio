@@ -13,7 +13,12 @@ export default function About() {
         download
         className="inline-block px-6 py-3 border border-black dark:border-white rounded-full font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
       >
-        Download Resume
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          className="mt-8 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full shadow-lg"
+        >
+          Download Resume
+        </motion.button>
       </a>
     </section>
   )
