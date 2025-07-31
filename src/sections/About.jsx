@@ -10,11 +10,11 @@ export default function About() {
 
 
       <a
-        href="/public/resume_jair_orduna.pdf"
+        href="/resume_jair_orduna.pdf"
         download
-          className="mt-8 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full shadow-lg hover:scale-110 transition-transform duration-200"
-        >
-          Download Resume
+        className="inline-block px-6 py-3 border border-black dark:border-white rounded-full font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
+      >
+        Download Resume
       </a>
     </section>
   )
