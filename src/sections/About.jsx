@@ -10,7 +10,7 @@ export default function About() {
 
 
       <a
-        href="/public/resume.pdf"
+        href="public\resume.pdf"
         download
         className="inline-block px-6 py-3 border border-black dark:border-white rounded-full font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
       >
