@@ -10,7 +10,7 @@ export default function About() {
 
 
       <a
-        href="../public/resume_jair_orduna.pdf"
+        href="/public/resume_jair_orduna.pdf"
         download
           className="mt-8 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full shadow-lg hover:scale-110 transition-transform duration-200"
         >
