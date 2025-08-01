@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: "Maddison Gabriel",
     role: "Head of Customer Success, Inspace",
-    text: "Jair has consistently demonstrated a strong work ethic, a collaborative mindset, and a keen willingness to learn and grow in his role. His attention to detail and reliability have ensured the smooth flow of work and consistent project delivery. <br>He is a dependable team player who can be trusted to deliver high-quality work, communicate effectively, and contribute to a positive team culture."
+    text: "Jair has consistently demonstrated a strong work ethic, a collaborative mindset, and a keen willingness to learn and grow in his role. His attention to detail and reliability have ensured the smooth flow of work and consistent project delivery. He is a dependable team player who can be trusted to deliver high-quality work, communicate effectively, and contribute to a positive team culture."
   },
   {
     name: "Michael Villarama",
