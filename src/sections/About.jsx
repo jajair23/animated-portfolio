@@ -10,9 +10,9 @@ export default function About() {
 
 
       <a
-        href="public\resume.pdf"
-        download
-        className="inline-block px-6 py-3 border border-black dark:border-white rounded-full font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
+        href="/resume.pdf"
+        download="Jair-Orduña-Resume.pdf"
+        className="mt-6 inline-block px-6 py-3 rounded-xl bg-blue-600 text-white font-medium hover:bg-blue-700 transition"
       >
         Download Resume
       </a>
